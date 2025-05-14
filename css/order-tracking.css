@@ -765,3 +765,32 @@ button:disabled { cursor: not-allowed; opacity: 0.6; background-color: #e2e8f0; 
         transform: translate(-50%, -20px);
     }
 }
+
+/* --- Tối giản cho tích hợp hero-section --- */
+.main-container, .tracking-form-card, .tracking-result-section {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+.result-header, .result-body {
+    background: none !important;
+    padding: 0 !important;
+}
+.tracking-result-section {
+    animation: none !important;
+    margin-top: 18px !important;
+    margin-bottom: 0 !important;
+}
+.input-desc {
+    margin-bottom: 0 !important;
+}
+@media (max-width: 900px) {
+    .main-container, .tracking-form-card, .tracking-result-section {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
