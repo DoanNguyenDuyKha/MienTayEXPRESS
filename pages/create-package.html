@@ -112,6 +112,12 @@
         <header class="header">
             <button class="mobile-sidebar-toggle" id="mobile-sidebar-toggle" aria-label="Toggle Navigation Menu" aria-controls="sidebar" aria-expanded="false"> <i class="fa-solid fa-bars"></i> </button>
             <div class="header-left">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="header-search-input" placeholder="Mã vận đơn / Tracking ID...">
+                </div>
+            </div>
+            <div class="header-actions" style="display: flex; align-items: center; gap: 1.2rem; margin-left: auto;">
                 <div class="notification-wrapper">
                     <button class="notification-button" id="notification-button" title="Thông báo">
                         <i class="fa-regular fa-bell"></i>
@@ -145,25 +151,19 @@
                         <div class="dropdown-footer"><a href="#">Xem tất cả</a></div>
                     </div>
                 </div>
-                <div class="search-container">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input type="text" placeholder="Mã vận đơn / Tracking ID...">
+                <div class="user-container" style="position: relative;">
+                    <div class="user-dropdown-toggle" id="user-dropdown-toggle" style="display: flex; align-items: center; gap: 6px; background: #6366f1; border-radius: 7px; padding: 6px 14px; cursor: pointer;">
+                        <i class="fa-regular fa-circle-user user-icon" id="user-icon" style="color: #fff; font-size: 1.25em;"></i>
+                        <i class="fa-solid fa-chevron-down user-arrow" style="color: #fff; font-size: 1em;"></i>
+                </div>
+                    <div class="user-dropdown" id="user-dropdown">
+                        <a href="#" class="user-dropdown-item" id="profile-link"><i class="fa-regular fa-user"></i> Profile</a>
+                        <a href="#" class="user-dropdown-item" id="login-link"><i class="fa-solid fa-right-to-bracket"></i> Đăng nhập</a>
+                        <a href="#" class="user-dropdown-item" id="logout-link"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a>
+            </div>
                 </div>
             </div>
-            <div class="header-right">
-                <div class="datetime-info">
-                    <i class="fa-regular fa-calendar"></i> <span id="current-date"></span>
-                    <i class="fa-regular fa-clock"></i> <span id="current-time"></span>
-                </div>
-                <div class="user-container">
-                    <i class="fa-regular fa-circle-user user-icon"></i> <span class="username">Phạm Hoàng Đình</span>
-                </div>
-                <div class="header-actions">
-                    <button class="action-icon" title="Fullscreen" id="fullscreen-btn"><i class="fa-solid fa-expand"></i></button>
-                    <button class="action-icon" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></button>
-                </div>
-            </div>
-       </header>
+        </header>
 
         <div class="content-wrapper">
             <section class="page-header">
