@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miền Tây Express</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Home2.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../images/logo-removebg.png" alt="Miền Tây Express Logo" class="logo-img">
+            </div>
+            <div class="header-contact">
+                <a href="tel:0931179934" class="hotline">
+                    <i class="fas fa-phone-alt"></i> Hotline: <strong>0931 179 934</strong>
+                </a>
+                <a href="#contact-info" class="info-icon" aria-label="Thông tin thêm">
+                    <i class="fas fa-info-circle"></i>
+                </a>
+                <div class="user-dropdown">
+                    <button class="user-icon" aria-label="Tài khoản">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <div class="user-dropdown-menu">
+                        <a href="pages/login.html" class="user-login">Đăng nhập</a>
+                        <a href="#" class="user-logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-yellow">MIỀN TÂY</span>
+                    <span class="hero-title-dark">EXPRESS</span>
+                </h1>
+                <div class="hero-underline"></div>
+                <p class="hero-subtitle"><i class="fas fa-bolt hero-subtitle-icon"></i> Vận Chuyển Nhanh Chóng - Kết Nối Toàn Cầu</p>
+                <div class="hero-tracking-form">
+                    <input type="text" id="trackingCode" placeholder="Nhập mã tracking của bạn...">
+                    <button type="button" class="cta-button">Theo Dõi</button>
+                </div>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <section class="info-contact-section" id="contact-info">
+            <div class="container grid-container">
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-globe-asia"></i></div>
+                    <h2 class="card-title">Về Chúng Tôi</h2>
+                    <p class="card-text">Khám phá các dịch vụ vận chuyển hàng đầu và cập nhật thông tin mới nhất tại website chính thức.</p>
+                    <a href="http://www.mientayexpress.com" target="_blank" class="card-link">www.mientayexpress.com</a>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-share-alt"></i></div>
+                    <h2 class="card-title">Kết Nối Với Chúng Tôi</h2>
+                    <div class="social-links-home">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link zalo" aria-label="Zalo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+                        </a>
+                        <a href="#" class="social-link tiktok" aria-label="TikTok">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/TikTok_logo.png" alt="TikTok">
+                        </a>
+                    </div>
+                    <a href="#" class="help-link">Cần Hỗ Trợ?</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-section">
+            <div class="container">
+                <h2 class="section-title">Đối Tác Của Miền Tây Express</h2>
+                <div class="partner-logos">
+                    <div class="partner-logo-item">
+                        <img src="../images/partner-vietnamairlines.jpg" alt="Vietnam Airlines">
+                    </div>
+                    <div class="partner-logo-item">
+                        <img src="../images/partner-bamboo.jpg" alt="Bamboo Airways">
+                    </div>
+                    <div class="partner-logo-item">
+                        <img src="../images/partner-fedex.jpg" alt="FedEx">
+                    </div>
+                    <div class="partner-logo-item">
+                        <img src="../images/partner-dhl.jpg" alt="DHL">
+                    </div>
+                    <div class="partner-logo-item">
+                        <img src="../images/partner-ups.jpg" alt="UPS">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p class="copyright">© 2025 Miền Tây Express. All rights reserved.</p>
+            <p class="design-credit">Design by <a href="https://nina.vn/" target="_blank">Nina Co., Ltd</a></p>
+            <a href="#" class="back-to-top" aria-label="Lên đầu trang"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const backToTopButton = document.querySelector('.back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.display = 'flex';
+                    backToTopButton.style.opacity = '1';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                    setTimeout(() => {
+                        if (window.pageYOffset <= 300) backToTopButton.style.display = 'none';
+                    }, 300);
+                }
+            });
+
+            backToTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        const userIcon = document.querySelector('.user-icon');
+        const userDropdownMenu = document.querySelector('.user-dropdown-menu');
+        if (userIcon && userDropdownMenu) {
+            userIcon.addEventListener('click', function(e) {
+                e.stopPropagation();
+                userDropdownMenu.classList.toggle('show');
+            });
+            document.addEventListener('click', function() {
+                userDropdownMenu.classList.remove('show');
+            });
+            document.querySelector('.user-login').addEventListener('click', function() {
+                window.location.href = 'pages/login.html';
+            });
+            document.querySelector('.user-logout').addEventListener('click', function(e) {
+                e.preventDefault();
+                userDropdownMenu.classList.remove('show');
+            });
+        }
+    </script>
+</body>
+</html>
